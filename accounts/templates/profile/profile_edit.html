@@ -1,0 +1,15 @@
+{% include "base.html" %}
+{% block content %}
+   <h1>Profile Edit</h1>
+   
+   <form method="POST">
+      {% csrf_token %}
+      
+      {{user_form}}
+
+      {{profile_form}}
+
+      <input type="submit" class="btn btn-primary" value="Change"/>
+   </form>
+   
+{% endblock content %}

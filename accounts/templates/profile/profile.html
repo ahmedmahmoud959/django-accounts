@@ -1,0 +1,10 @@
+{% include "base.html" %}
+{% block content %}
+   <h1>Profile</h1>
+   <h2>{{profile.user}}</h2>
+   <p>{{profile.user.email}}</p>
+   <p>{{profile.phone_number}}</p>
+   <p>{{profile.address}}</p>
+
+   <a href="{% url 'profile_edit' %}">Profile Edit</a>
+{% endblock content %}
